@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>作品展示: 台股大盤資料視覺化</title>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="highstock.js"></script>
+	<style>
+body {
+	background-color: #000000;
+}
+.white {
+	color: #FFFFFF;
+}
+.labelCheckbox {
+}
+	</style>
+</head>
+<body>
+	<div class="white">作品展示: 台股大盤資料視覺化</div>
+	<div class="white">作者: AN659064@gmail.com</div>
+	<br>
+	<select id="selectStockId">
+		<option value="2302" selected>2302 麗　正</option>
+		<option value="2303">2303 聯　電</option>
+		<option value="2329">2329 華　泰</option>
+		<option value="2330">2330 台積電</option>
+		<option value="2337">2337 旺　宏</option>
+		<option value="2338">2338 光　罩</option>
+		<option value="2342">2342 茂　矽</option>
+		<option value="2344">2344 華邦電</option>
+		<option value="2351">2351 順　德</option>
+		<option value="2363">2363 矽　統</option>
+		<option value="2369">2369 菱　生</option>
+		<option value="2379">2379 瑞　昱</option>
+		<option value="2388">2388 威　盛</option>
+		<option value="2401">2401 凌　陽</option>
+		<option value="2408">2408 南亞科</option>
+		<option value="2434">2434 統　懋</option>
+		<option value="2436">2436 偉詮電</option>
+		<option value="2441">2441 超　豐</option>
+		<option value="2449">2449 京元電子</option>
+		<option value="2451">2451 創　見</option>
+		<option value="2454">2454 聯發科</option>
+		<option value="2458">2458 義　隆</option>
+		<option value="2481">2481 強　茂</option>
+		<option value="3006">3006 晶豪科</option>
+		<option value="3014">3014 聯　陽</option>
+		<option value="3016">3016 嘉　晶</option>
+		<option value="3034">3034 聯　詠</option>
+		<option value="3035">3035 智　原</option>
+		<option value="3041">3041 揚　智</option>
+		<option value="3054">3054 立萬利</option>
+		<option value="3094">3094 聯　傑</option>
+		<option value="3189">3189 景　碩</option>
+		<option value="3257">3257 虹冠電</option>
+		<option value="3413">3413 京　鼎</option>
+		<option value="3443">3443 創　意</option>
+		<option value="3519">3519 綠　能</option>
+		<option value="3532">3532 台勝科</option>
+		<option value="3536">3536 誠　創</option>
+		<option value="3545">3545 敦　泰</option>
+		<option value="3579">3579 尚　志</option>
+		<option value="3583">3583 辛　耘</option>
+		<option value="3588">3588 通　嘉</option>
+		<option value="3661">3661 世芯-KY</option>
+		<option value="3686">3686 達　能</option>
+		<option value="4919">4919 新　唐</option>
+		<option value="4952">4952 凌　通</option>
+		<option value="4968">4968 立　積</option>
+		<option value="5269">5269 祥　碩</option>
+		<option value="5285">5285 界　霖</option>
+		<option value="5305">5305 敦　南</option>
+		<option value="5471">5471 松　翰</option>
+		<option value="6202">6202 盛　群</option>
+		<option value="6239">6239 力　成</option>
+		<option value="6243">6243 迅　杰</option>
+		<option value="6257">6257 矽　格</option>
+		<option value="6271">6271 同欣電</option>
+		<option value="6415">6415 矽力-KY</option>
+		<option value="6451">6451 訊芯-KY</option>
+		<option value="6525">6525 捷敏-KY</option>
+		<option value="6531">6531 愛　普</option>
+		<option value="6533">6533 晶心科</option>
+		<option value="6552">6552 易華電</option>
+		<option value="8016">8016 矽　創</option>
+		<option value="8081">8081 致　新</option>
+		<option value="8110">8110 華　東</option>
+		<option value="8131">8131 福懋科</option>
+		<option value="8150">8150 南　茂</option>
+		<option value="8261">8261 富　鼎</option>
+		<option value="8271">8271 宇　瞻</option>
+		<option value="9000">9000 半導體</option>
+	</select>
+	<label class="white labelCheckbox">MA 5<input type="checkbox" checked /></label>
+	<label class="white labelCheckbox">10<input type="checkbox" checked /></label>
+	<label class="white labelCheckbox">15<input type="checkbox"/></label>
+	<label class="white labelCheckbox">20<input type="checkbox" /></label>
+	<label class="white labelCheckbox">30<input type="checkbox" /></label>
+	<div id="container" style="height: 650px; width: 100%"></div>
+	<script src="demo.js"></script>
+</body>
+</html>
